@@ -1,0 +1,275 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Trello/1.0.0": {
+        "dependencies": {
+          "CommandLineParser": "2.8.0",
+          "ManyConsole": "2.0.1",
+          "Newtonsoft.Json": "12.0.3",
+          "Nito.AsyncEx": "5.1.0",
+          "RestSharp": "106.11.7"
+        },
+        "runtime": {
+          "Trello.dll": {}
+        }
+      },
+      "CommandLineParser/2.8.0": {
+        "runtime": {
+          "lib/netstandard2.0/CommandLine.dll": {
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.0.0"
+          }
+        }
+      },
+      "ManyConsole/2.0.1": {
+        "dependencies": {
+          "Mono.Options": "5.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ManyConsole.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "Mono.Options/5.3.0": {
+        "runtime": {
+          "lib/netstandard1.3/Mono.Options.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.3.0.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "Nito.AsyncEx/5.1.0": {
+        "dependencies": {
+          "Nito.AsyncEx.Context": "5.1.0",
+          "Nito.AsyncEx.Coordination": "5.1.0",
+          "Nito.AsyncEx.Interop.WaitHandles": "5.1.0",
+          "Nito.AsyncEx.Oop": "5.1.0",
+          "Nito.AsyncEx.Tasks": "5.1.0",
+          "Nito.Cancellation": "1.1.0"
+        }
+      },
+      "Nito.AsyncEx.Context/5.1.0": {
+        "dependencies": {
+          "Nito.AsyncEx.Tasks": "5.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nito.AsyncEx.Context.dll": {
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.0.0"
+          }
+        }
+      },
+      "Nito.AsyncEx.Coordination/5.1.0": {
+        "dependencies": {
+          "Nito.AsyncEx.Tasks": "5.1.0",
+          "Nito.Collections.Deque": "1.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nito.AsyncEx.Coordination.dll": {
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.0.0"
+          }
+        }
+      },
+      "Nito.AsyncEx.Interop.WaitHandles/5.1.0": {
+        "dependencies": {
+          "Nito.AsyncEx.Tasks": "5.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nito.AsyncEx.Interop.WaitHandles.dll": {
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.0.0"
+          }
+        }
+      },
+      "Nito.AsyncEx.Oop/5.1.0": {
+        "dependencies": {
+          "Nito.AsyncEx.Coordination": "5.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nito.AsyncEx.Oop.dll": {
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.0.0"
+          }
+        }
+      },
+      "Nito.AsyncEx.Tasks/5.1.0": {
+        "dependencies": {
+          "Nito.Disposables": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nito.AsyncEx.Tasks.dll": {
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.0.0"
+          }
+        }
+      },
+      "Nito.Cancellation/1.1.0": {
+        "dependencies": {
+          "Nito.Disposables": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nito.Cancellation.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      },
+      "Nito.Collections.Deque/1.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/Nito.Collections.Deque.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      },
+      "Nito.Disposables/2.2.0": {
+        "dependencies": {
+          "System.Collections.Immutable": "1.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Nito.Disposables.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        }
+      },
+      "RestSharp/106.11.7": {
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {
+            "assemblyVersion": "106.11.7.0",
+            "fileVersion": "106.11.7.0"
+          }
+        }
+      },
+      "System.Collections.Immutable/1.4.0": {}
+    }
+  },
+  "libraries": {
+    "Trello/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommandLineParser/2.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eco2HlKQBY4Joz9odHigzGpVzv6pjsXnY5lziioMveQxr+i2Z7xYcIOMeZTgYiqnMtMAbXMXsVhrNfWO5vJS8Q==",
+      "path": "commandlineparser/2.8.0",
+      "hashPath": "commandlineparser.2.8.0.nupkg.sha512"
+    },
+    "ManyConsole/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JaNOJjBcZ5qvkvhtw0NTT5qcV29s7kV7IbeonCfV4tX9Wyewe2dcSkuNNmUkZDyeTyFNL9RPicOD7Vf8xuqhRQ==",
+      "path": "manyconsole/2.0.1",
+      "hashPath": "manyconsole.2.0.1.nupkg.sha512"
+    },
+    "Mono.Options/5.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pRL0iiFkkUmQbdPDCpCQRee6w4jj63tdyS2F64jg9859t3DKBXlLpDCvZLs4C45ZSDmWD9tiJtIx/7O8/B1XkA==",
+      "path": "mono.options/5.3.0",
+      "hashPath": "mono.options.5.3.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "Nito.AsyncEx/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KOahZdW0fRLnoym5lGtyWpFUZ94I5s0wLgYF5RHhK8RUhXpCiEX+185qjNvkse3H9WJV2/pFfPlKZHv8Eej7Hw==",
+      "path": "nito.asyncex/5.1.0",
+      "hashPath": "nito.asyncex.5.1.0.nupkg.sha512"
+    },
+    "Nito.AsyncEx.Context/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EE7M37c5E/kvulzEkpUR6v1AnK34b2wysOLJHSjl78p/3hL7grte0XCPRqCfLZDwq98AD9GHMTCRfZy7TEeHhw==",
+      "path": "nito.asyncex.context/5.1.0",
+      "hashPath": "nito.asyncex.context.5.1.0.nupkg.sha512"
+    },
+    "Nito.AsyncEx.Coordination/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Nv+oA+cSxidjOImiKcz2FJgMIDxiK0A6xormKmsUklUBjTNqQpjtdJsACMgTQG56PkTHdbMi5QijPTTUsmcCeg==",
+      "path": "nito.asyncex.coordination/5.1.0",
+      "hashPath": "nito.asyncex.coordination.5.1.0.nupkg.sha512"
+    },
+    "Nito.AsyncEx.Interop.WaitHandles/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wFm3lrXXNPBtZHjLI21xhcADoh5CzO5KKNO38ybLO/CcL9zMUWWfsNiAFbw8JGp/wHoxhfdEUlThBnY3XaLR/w==",
+      "path": "nito.asyncex.interop.waithandles/5.1.0",
+      "hashPath": "nito.asyncex.interop.waithandles.5.1.0.nupkg.sha512"
+    },
+    "Nito.AsyncEx.Oop/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J5DVgQrmE9qMNhK2eEMsuEw7V7cw7MIPrv3jqqQWolzDXkOxJFFYKUK+4dnC6UAEmum3xRVD2oBAoXg0vdYDDQ==",
+      "path": "nito.asyncex.oop/5.1.0",
+      "hashPath": "nito.asyncex.oop.5.1.0.nupkg.sha512"
+    },
+    "Nito.AsyncEx.Tasks/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tU3Ib4zs8ivM+uS8n7F7ReWZlA3mODyLqwPE+v+WJI94hZ8xLXl+a9npfj/IcmeXo9a6fGKLWkswKQHOeTWqwA==",
+      "path": "nito.asyncex.tasks/5.1.0",
+      "hashPath": "nito.asyncex.tasks.5.1.0.nupkg.sha512"
+    },
+    "Nito.Cancellation/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BSezc6jsEEAoa8UtVjQ6Qr/D5xX+FozlDKFHAvDeTv24I7ZZmmfbFxEmdjaSLnrboz1WMRjUKCQwZw7Gf4+WcA==",
+      "path": "nito.cancellation/1.1.0",
+      "hashPath": "nito.cancellation.1.1.0.nupkg.sha512"
+    },
+    "Nito.Collections.Deque/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RXHe531Oaw2IathDr0Q2kbid0iuudBxtgZsfBZ2eUPuFI8I1P7HMiuUeaIefqYykcDYFTDQsFAPAljduIjihLA==",
+      "path": "nito.collections.deque/1.1.0",
+      "hashPath": "nito.collections.deque.1.1.0.nupkg.sha512"
+    },
+    "Nito.Disposables/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QcL+uBwUCEoK8GKp/WzjdCiG8/3G1WLlVNJgLJUNG7bIIVAcEV+Mro4s53VT4Nd8xMSplv0gy+Priw44vRvLaA==",
+      "path": "nito.disposables/2.2.0",
+      "hashPath": "nito.disposables.2.2.0.nupkg.sha512"
+    },
+    "RestSharp/106.11.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NzndH096CTulvq+ihr7u1mBJ29oukdi9A8bypQJk+kaHxbRzTTrtgsEEQAb04ptTUZmQa7cgo7uF5z7NuEPX1Q==",
+      "path": "restsharp/106.11.7",
+      "hashPath": "restsharp.106.11.7.nupkg.sha512"
+    },
+    "System.Collections.Immutable/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-71hw5RUJRu5+q/geUY69gpXD8Upd12cH+F3MwpXV2zle7Bqqkrmc1JblOTuvUcgmdnUtQvBlV5e1d6RH+H2lvA==",
+      "path": "system.collections.immutable/1.4.0",
+      "hashPath": "system.collections.immutable.1.4.0.nupkg.sha512"
+    }
+  }
+}

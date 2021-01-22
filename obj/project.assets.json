@@ -1,0 +1,530 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "CommandLineParser/2.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/CommandLine.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CommandLine.dll": {}
+        }
+      },
+      "ManyConsole/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Mono.Options": "5.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/ManyConsole.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ManyConsole.dll": {}
+        }
+      },
+      "Mono.Options/5.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.3/Mono.Options.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Mono.Options.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Nito.AsyncEx/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Nito.AsyncEx.Context": "5.1.0",
+          "Nito.AsyncEx.Coordination": "5.1.0",
+          "Nito.AsyncEx.Interop.WaitHandles": "5.1.0",
+          "Nito.AsyncEx.Oop": "5.1.0",
+          "Nito.AsyncEx.Tasks": "5.1.0",
+          "Nito.Cancellation": "1.1.0"
+        }
+      },
+      "Nito.AsyncEx.Context/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Nito.AsyncEx.Tasks": "5.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Nito.AsyncEx.Context.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nito.AsyncEx.Context.dll": {}
+        }
+      },
+      "Nito.AsyncEx.Coordination/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Nito.AsyncEx.Tasks": "5.1.0",
+          "Nito.Collections.Deque": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Nito.AsyncEx.Coordination.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nito.AsyncEx.Coordination.dll": {}
+        }
+      },
+      "Nito.AsyncEx.Interop.WaitHandles/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Nito.AsyncEx.Tasks": "5.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Nito.AsyncEx.Interop.WaitHandles.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nito.AsyncEx.Interop.WaitHandles.dll": {}
+        }
+      },
+      "Nito.AsyncEx.Oop/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Nito.AsyncEx.Coordination": "5.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Nito.AsyncEx.Oop.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nito.AsyncEx.Oop.dll": {}
+        }
+      },
+      "Nito.AsyncEx.Tasks/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Nito.Disposables": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Nito.AsyncEx.Tasks.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nito.AsyncEx.Tasks.dll": {}
+        }
+      },
+      "Nito.Cancellation/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Nito.Disposables": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Nito.Cancellation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nito.Cancellation.dll": {}
+        }
+      },
+      "Nito.Collections.Deque/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Nito.Collections.Deque.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nito.Collections.Deque.dll": {}
+        }
+      },
+      "Nito.Disposables/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "1.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Nito.Disposables.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Nito.Disposables.dll": {}
+        }
+      },
+      "RestSharp/106.11.7": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
+      "System.Collections.Immutable/1.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CommandLineParser/2.8.0": {
+      "sha512": "eco2HlKQBY4Joz9odHigzGpVzv6pjsXnY5lziioMveQxr+i2Z7xYcIOMeZTgYiqnMtMAbXMXsVhrNfWO5vJS8Q==",
+      "type": "package",
+      "path": "commandlineparser/2.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CommandLine20.png",
+        "License.md",
+        "README.md",
+        "commandlineparser.2.8.0.nupkg.sha512",
+        "commandlineparser.nuspec",
+        "lib/net40/CommandLine.dll",
+        "lib/net40/CommandLine.xml",
+        "lib/net45/CommandLine.dll",
+        "lib/net45/CommandLine.xml",
+        "lib/net461/CommandLine.dll",
+        "lib/net461/CommandLine.xml",
+        "lib/netstandard2.0/CommandLine.dll",
+        "lib/netstandard2.0/CommandLine.xml"
+      ]
+    },
+    "ManyConsole/2.0.1": {
+      "sha512": "JaNOJjBcZ5qvkvhtw0NTT5qcV29s7kV7IbeonCfV4tX9Wyewe2dcSkuNNmUkZDyeTyFNL9RPicOD7Vf8xuqhRQ==",
+      "type": "package",
+      "path": "manyconsole/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net46/ManyConsole.dll",
+        "lib/net46/ManyConsole.pdb",
+        "lib/net46/ManyConsoleModeCommand.dll",
+        "lib/net46/ManyConsoleModeCommand.pdb",
+        "lib/netstandard2.0/ManyConsole.dll",
+        "lib/netstandard2.0/ManyConsole.pdb",
+        "manyconsole.2.0.1.nupkg.sha512",
+        "manyconsole.nuspec"
+      ]
+    },
+    "Mono.Options/5.3.0": {
+      "sha512": "pRL0iiFkkUmQbdPDCpCQRee6w4jj63tdyS2F64jg9859t3DKBXlLpDCvZLs4C45ZSDmWD9tiJtIx/7O8/B1XkA==",
+      "type": "package",
+      "path": "mono.options/5.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/dnxcore/Mono.Options.dll",
+        "lib/net4-client/Mono.Options.dll",
+        "lib/netstandard1.3/Mono.Options.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch+XamariniOS+Xamarin.Mac/Mono.Options.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8/Mono.Options.dll",
+        "mono.options.5.3.0.nupkg.sha512",
+        "mono.options.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Nito.AsyncEx/5.1.0": {
+      "sha512": "KOahZdW0fRLnoym5lGtyWpFUZ94I5s0wLgYF5RHhK8RUhXpCiEX+185qjNvkse3H9WJV2/pFfPlKZHv8Eej7Hw==",
+      "type": "package",
+      "path": "nito.asyncex/5.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "nito.asyncex.5.1.0.nupkg.sha512",
+        "nito.asyncex.nuspec"
+      ]
+    },
+    "Nito.AsyncEx.Context/5.1.0": {
+      "sha512": "EE7M37c5E/kvulzEkpUR6v1AnK34b2wysOLJHSjl78p/3hL7grte0XCPRqCfLZDwq98AD9GHMTCRfZy7TEeHhw==",
+      "type": "package",
+      "path": "nito.asyncex.context/5.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard1.3/Nito.AsyncEx.Context.dll",
+        "lib/netstandard1.3/Nito.AsyncEx.Context.xml",
+        "lib/netstandard2.0/Nito.AsyncEx.Context.dll",
+        "lib/netstandard2.0/Nito.AsyncEx.Context.xml",
+        "nito.asyncex.context.5.1.0.nupkg.sha512",
+        "nito.asyncex.context.nuspec"
+      ]
+    },
+    "Nito.AsyncEx.Coordination/5.1.0": {
+      "sha512": "Nv+oA+cSxidjOImiKcz2FJgMIDxiK0A6xormKmsUklUBjTNqQpjtdJsACMgTQG56PkTHdbMi5QijPTTUsmcCeg==",
+      "type": "package",
+      "path": "nito.asyncex.coordination/5.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard1.3/Nito.AsyncEx.Coordination.dll",
+        "lib/netstandard1.3/Nito.AsyncEx.Coordination.xml",
+        "lib/netstandard2.0/Nito.AsyncEx.Coordination.dll",
+        "lib/netstandard2.0/Nito.AsyncEx.Coordination.xml",
+        "nito.asyncex.coordination.5.1.0.nupkg.sha512",
+        "nito.asyncex.coordination.nuspec"
+      ]
+    },
+    "Nito.AsyncEx.Interop.WaitHandles/5.1.0": {
+      "sha512": "wFm3lrXXNPBtZHjLI21xhcADoh5CzO5KKNO38ybLO/CcL9zMUWWfsNiAFbw8JGp/wHoxhfdEUlThBnY3XaLR/w==",
+      "type": "package",
+      "path": "nito.asyncex.interop.waithandles/5.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard1.3/Nito.AsyncEx.Interop.WaitHandles.dll",
+        "lib/netstandard1.3/Nito.AsyncEx.Interop.WaitHandles.xml",
+        "lib/netstandard2.0/Nito.AsyncEx.Interop.WaitHandles.dll",
+        "lib/netstandard2.0/Nito.AsyncEx.Interop.WaitHandles.xml",
+        "nito.asyncex.interop.waithandles.5.1.0.nupkg.sha512",
+        "nito.asyncex.interop.waithandles.nuspec"
+      ]
+    },
+    "Nito.AsyncEx.Oop/5.1.0": {
+      "sha512": "J5DVgQrmE9qMNhK2eEMsuEw7V7cw7MIPrv3jqqQWolzDXkOxJFFYKUK+4dnC6UAEmum3xRVD2oBAoXg0vdYDDQ==",
+      "type": "package",
+      "path": "nito.asyncex.oop/5.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard1.3/Nito.AsyncEx.Oop.dll",
+        "lib/netstandard1.3/Nito.AsyncEx.Oop.xml",
+        "lib/netstandard2.0/Nito.AsyncEx.Oop.dll",
+        "lib/netstandard2.0/Nito.AsyncEx.Oop.xml",
+        "nito.asyncex.oop.5.1.0.nupkg.sha512",
+        "nito.asyncex.oop.nuspec"
+      ]
+    },
+    "Nito.AsyncEx.Tasks/5.1.0": {
+      "sha512": "tU3Ib4zs8ivM+uS8n7F7ReWZlA3mODyLqwPE+v+WJI94hZ8xLXl+a9npfj/IcmeXo9a6fGKLWkswKQHOeTWqwA==",
+      "type": "package",
+      "path": "nito.asyncex.tasks/5.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard1.3/Nito.AsyncEx.Tasks.dll",
+        "lib/netstandard1.3/Nito.AsyncEx.Tasks.xml",
+        "lib/netstandard2.0/Nito.AsyncEx.Tasks.dll",
+        "lib/netstandard2.0/Nito.AsyncEx.Tasks.xml",
+        "nito.asyncex.tasks.5.1.0.nupkg.sha512",
+        "nito.asyncex.tasks.nuspec"
+      ]
+    },
+    "Nito.Cancellation/1.1.0": {
+      "sha512": "BSezc6jsEEAoa8UtVjQ6Qr/D5xX+FozlDKFHAvDeTv24I7ZZmmfbFxEmdjaSLnrboz1WMRjUKCQwZw7Gf4+WcA==",
+      "type": "package",
+      "path": "nito.cancellation/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard1.0/Nito.Cancellation.dll",
+        "lib/netstandard1.0/Nito.Cancellation.xml",
+        "lib/netstandard2.0/Nito.Cancellation.dll",
+        "lib/netstandard2.0/Nito.Cancellation.xml",
+        "nito.cancellation.1.1.0.nupkg.sha512",
+        "nito.cancellation.nuspec"
+      ]
+    },
+    "Nito.Collections.Deque/1.1.0": {
+      "sha512": "RXHe531Oaw2IathDr0Q2kbid0iuudBxtgZsfBZ2eUPuFI8I1P7HMiuUeaIefqYykcDYFTDQsFAPAljduIjihLA==",
+      "type": "package",
+      "path": "nito.collections.deque/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard1.0/Nito.Collections.Deque.dll",
+        "lib/netstandard1.0/Nito.Collections.Deque.xml",
+        "lib/netstandard2.0/Nito.Collections.Deque.dll",
+        "lib/netstandard2.0/Nito.Collections.Deque.xml",
+        "nito.collections.deque.1.1.0.nupkg.sha512",
+        "nito.collections.deque.nuspec"
+      ]
+    },
+    "Nito.Disposables/2.2.0": {
+      "sha512": "QcL+uBwUCEoK8GKp/WzjdCiG8/3G1WLlVNJgLJUNG7bIIVAcEV+Mro4s53VT4Nd8xMSplv0gy+Priw44vRvLaA==",
+      "type": "package",
+      "path": "nito.disposables/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net461/Nito.Disposables.dll",
+        "lib/net461/Nito.Disposables.xml",
+        "lib/netstandard1.0/Nito.Disposables.dll",
+        "lib/netstandard1.0/Nito.Disposables.xml",
+        "lib/netstandard2.0/Nito.Disposables.dll",
+        "lib/netstandard2.0/Nito.Disposables.xml",
+        "lib/netstandard2.1/Nito.Disposables.dll",
+        "lib/netstandard2.1/Nito.Disposables.xml",
+        "nito.disposables.2.2.0.nupkg.sha512",
+        "nito.disposables.nuspec"
+      ]
+    },
+    "RestSharp/106.11.7": {
+      "sha512": "NzndH096CTulvq+ihr7u1mBJ29oukdi9A8bypQJk+kaHxbRzTTrtgsEEQAb04ptTUZmQa7cgo7uF5z7NuEPX1Q==",
+      "type": "package",
+      "path": "restsharp/106.11.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.11.7.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
+      ]
+    },
+    "System.Collections.Immutable/1.4.0": {
+      "sha512": "71hw5RUJRu5+q/geUY69gpXD8Upd12cH+F3MwpXV2zle7Bqqkrmc1JblOTuvUcgmdnUtQvBlV5e1d6RH+H2lvA==",
+      "type": "package",
+      "path": "system.collections.immutable/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Collections.Immutable.dll",
+        "lib/netstandard1.0/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
+        "ref/netcoreapp2.0/_._",
+        "system.collections.immutable.1.4.0.nupkg.sha512",
+        "system.collections.immutable.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "CommandLineParser >= 2.8.0",
+      "ManyConsole >= 2.0.1",
+      "Newtonsoft.Json >= 12.0.3",
+      "Nito.AsyncEx >= 5.1.0",
+      "RestSharp >= 106.11.7"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\alecb\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Programming\\C#\\Trello\\Trello.csproj",
+      "projectName": "Trello",
+      "projectPath": "C:\\Programming\\C#\\Trello\\Trello.csproj",
+      "packagesPath": "C:\\Users\\alecb\\.nuget\\packages\\",
+      "outputPath": "C:\\Programming\\C#\\Trello\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\alecb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "CommandLineParser": {
+            "target": "Package",
+            "version": "[2.8.0, )"
+          },
+          "ManyConsole": {
+            "target": "Package",
+            "version": "[2.0.1, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
+          },
+          "Nito.AsyncEx": {
+            "target": "Package",
+            "version": "[5.1.0, )"
+          },
+          "RestSharp": {
+            "target": "Package",
+            "version": "[106.11.7, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
