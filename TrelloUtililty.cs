@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using CredentialManagement;
 
 namespace Trello.Main
 {
@@ -247,7 +248,7 @@ namespace Trello.Main
 
         
         // * * * * * * * * * * Console Functions * * * * * * * * * *
-        private static object ConsoleLock = null;
+        private static object ConsoleLock = new object();
 
         // Prints red
         public static void LogError(string payload)
@@ -305,20 +306,40 @@ namespace Trello.Main
         // * * * * * * * * * * Fetch Credentials * * * * * * * * * *
         private static Dictionary<string, string> FetchCredentials(string filename)
         {
-            using (StreamReader r = new StreamReader(filename))
+            // retrieve credentials from windows
+            Credential cred = new Credential(){Target="TrelloAPI"};
+            if(!cred.Load())
             {
-                // read data from file
-                string json = r.ReadToEnd();
-                var jObject = (JObject)JsonConvert.DeserializeObject(json);
-
-                // convert to dictionary
-                var credentials = new Dictionary<string, string>();
-                foreach(var k in jObject)
-                    credentials[k.Key] = k.Value.ToString();
-
-                // return dictionary :-)
-                return credentials;
+                cred = PromptUserForCredentials();
+                cred.Save();
             }
+
+            // store the credentials in our dictionary
+            var credDict = new Dictionary<string, string>();
+            credDict["Key"]   = cred.Username;
+            credDict["Token"] = cred.Password;
+
+            return credDict;
+        }
+
+        private static Credential PromptUserForCredentials()
+        {
+
+            // prompt user for api key and token
+            Console.Write("API Key: ");
+            string key = Console.ReadLine();
+            Console.Write("API Token: ");
+            string token = Console.ReadLine();
+
+            // create credential
+            var cred = new Credential(){
+                Target = "TrelloAPI",
+                Username = key,
+                Password = token,
+                PersistanceType = PersistanceType.LocalComputer
+            };
+
+            return cred;
         }
 
 
