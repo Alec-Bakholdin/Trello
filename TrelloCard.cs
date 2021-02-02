@@ -109,6 +109,7 @@ namespace Trello.Main
 
             // get the  url
             var url = BasicURLSubstitution(CreateCardEndpoint) + EnumerateQueryParmeters(this);
+            
 
             // make api request
             var restResponse = await BasicRequest(url, RestSharp.Method.POST);

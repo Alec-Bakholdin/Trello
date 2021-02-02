@@ -1,7 +1,10 @@
 ﻿using System;
+using System.IO;
 using System.Threading.Tasks;
 using CommandLine;
 using Nito.AsyncEx;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Trello.Main
 {
@@ -58,8 +61,23 @@ namespace Trello.Main
             var trelloCard = new TrelloCard();
             if(cardOptions.ListName == null || cardOptions.BoardName == null)
             {
-                LogError("list and board names are both required when creating a card.");
-                return 1;
+                // if we haven't stored the data before
+                if(!File.Exists("profile.json"))
+                {
+                    LogError("list and board names are both required when creating a card.");
+                    return 1;
+                }
+                // if we have the data stored in profile.json
+                else
+                {
+                    // read file and convert to json
+                    var fileContents = File.ReadAllText("profile.json");
+                    var fileContentsJson = (JObject)JsonConvert.DeserializeObject(fileContents);
+
+                    // parse the data into the card options
+                    cardOptions.ListName = (cardOptions.ListName == null ? fileContentsJson["list-name"].ToString() : cardOptions.ListName);
+                    cardOptions.BoardName = (cardOptions.BoardName == null ? fileContentsJson["board-name"].ToString() : cardOptions.BoardName);
+                }
             }
 
             // fetch list ID, catching errors
@@ -71,6 +89,13 @@ namespace Trello.Main
             }
             
 
+            // store list-name and board-name in the profile file
+            var json = new JObject();
+            json["list-name"] = cardOptions.ListName;
+            json["board-name"] = cardOptions.BoardName;
+            var jsonStr = JsonConvert.SerializeObject(json);
+            File.WriteAllText("profile.json", jsonStr);
+
             // set basic options
             trelloCard.name         = cardOptions.CardName;
             trelloCard.due          = cardOptions.dueDate == null ? null : DateTime.Parse(cardOptions.dueDate);
@@ -79,7 +104,7 @@ namespace Trello.Main
             trelloCard.desc         = cardOptions.description;
             
 
-            // creete the card
+            // create the card
             try{
                 var restResponse = await trelloCard.Create();
                 if(!restResponse.IsSuccessful)

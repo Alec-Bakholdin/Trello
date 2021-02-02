@@ -1,5 +1,7 @@
 using RestSharp;
 using System;
+using System.Net;
+using System.Web;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
@@ -70,7 +72,7 @@ namespace Trello.Main
                                             .FindAll(fieldNameValue => fieldNameValue.Value != null && !excludeParameters.Contains(fieldNameValue.Name)); // filter out those that are null or excluded
 
             var queryParameterStr = queryParameterValues
-                                        .Select(input => $"{input.Name}={input.Value}")
+                                        .Select(input => $"{HttpUtility.UrlEncode(input.Name)}={HttpUtility.UrlEncode(input.Value)}")
                                         .Aggregate((x, y) => x += $"&{y}");
 
             return $"&{queryParameterStr}";
@@ -90,7 +92,7 @@ namespace Trello.Main
             else if(fieldValue is bool)
                 return (bool)fieldValue ? "true" : "false";
             else if(fieldValue is DateTime)
-                return ((DateTime)fieldValue).ToString("yyyy-MM-ddTHH:mm:ssZ");
+                return ((DateTime)fieldValue).ToString("yyyy-MM-ddTHH:mm:sszzz");
             else return null;
         }
 
@@ -100,6 +102,7 @@ namespace Trello.Main
          */ 
         public static async Task<IRestResponse> BasicRequest(string url, RestSharp.Method method)
         {
+
             var restRequest = new RestRequest();
             var restClient = new RestClient(url);
             var restResponse = await restClient.ExecuteAsync(restRequest, method);

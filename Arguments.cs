@@ -11,11 +11,11 @@ namespace Trello.Main
         public string Mode {get; set;}
         
         // identify the card
-        [Option('c', "card-name", HelpText="Name of the card", Default=null)]
+        [Option('c', "card-name", HelpText="Name of the card", Default=null, Group="Name")]
         public string CardName {get; set;}
-        [Option('l', "list-name", HelpText="Name of the list the card is located under", Default=null)]
+        [Option('l', "list-name", HelpText="Name of the list the card is located under", Default=null, Group="Name")]
         public string ListName {get; set;}
-        [Option('b', "board-name", HelpText="Name of the board the card is located in. Only necessary if using list-name", Default=null)]
+        [Option('b', "board-name", HelpText="Name of the board the card is located in. Only necessary if using list-name", Default=null, Group="Name")]
         public string BoardName {get; set;}
         
         // card properties
